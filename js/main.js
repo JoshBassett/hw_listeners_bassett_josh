@@ -1,11 +1,9 @@
-document.getElementById("h1Click").addEventListener("click", clickMe);
+var clickMe = document.getElementById('h1Click');
 
+var clickCounter = 0;
 
-function clickMe() {
-    console.log ('This is click number ' + click );
-
-}
-
-var i = 0;
-var click = (i + 1);
-
+clickMe.addEventListener('click', function() {
+    clickCounter++;
+    var clickWriter = '<p>This is click number ' + clickCounter + '</p>';
+    document.getElementById('clickWriter').innerHTML += clickWriter;
+});
