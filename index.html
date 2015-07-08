@@ -9,7 +9,31 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1 id="h1Click">Click Me</h1>
+<div class="container">
+    <form action="" autocomplete="on" method="post">
+        <p class="title">Contact</p>
+        <fieldset id="info">
+        <legend id="legendcontact">Event Listener HW</legend>
+            <p>
+                <label for="firstname">First Name: </label><br />
+                <input name="name" type="text" id="firstname" value="" size="25" required />
+            </p>
+            <p>
+                <label for="lastname">Last Name: </label><br />
+                <input name="name" type="text" id="lastname" value="" size="25" required />
+            </p>
+            <p>
+                <label for="email" >E-mail: </label><br />
+                <input name="email" type="email" id="email" value="" size="40%" required/>
+            </p>
+            <p>
+                <label for="textarea">Message: </label><br />
+                <textarea name="textarea" type="textarea" id="textarea" cols="45" rows="5" required maxlength="5000"/></textarea>
+            </p>
+        </fieldset>
+        <input name="submit" type="submit" id="submit" value="Submit" onclick="thank-you.html='mailto:jbassett9@gmail.com'" />
+    </form>
+</div>
 
 
     <script src="js/main.js"></script>
